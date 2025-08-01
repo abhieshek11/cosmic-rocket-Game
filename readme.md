@@ -7,6 +7,7 @@ A modern, responsive space shooter game built with HTML5 Canvas, CSS3, and vanil
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
+Preview https://cosmic-rocket.netlify.app/
 ## 🎮 Game Features
 
 ### Core Gameplay
@@ -183,3 +184,4 @@ This project is open source and available under the [MIT License](https://openso
 ### 🌟 Enjoy the game and may the force be with you, space defender! 🌟
 
 _Built with ❤️ and lots of ☕_
+
