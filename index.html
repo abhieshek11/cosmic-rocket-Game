@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Defender</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="gameContainer">
+        <canvas id="gameCanvas"></canvas>
+        <div id="ui">
+            <div id="score">Score: <span id="scoreValue">0</span></div>
+            <div id="lives">Lives: <span id="livesValue">3</span></div>
+            <div id="level">Level: <span id="levelValue">1</span></div>
+        </div>
+
+        <!-- Developer Button -->
+        <div id="developerBtn" title="Click me!">
+            <img id="developerLogo" src="profile.png" alt="Developer Profile">
+        </div>
+
+        <!-- Developer Modal -->
+        <div id="developerModal" class="hidden">
+            <div id="modalContent">
+                <div id="modalHeader">
+                    <h3>Developer Info</h3>
+                    <button id="closeModal">&times;</button>
+                </div>
+                <div id="modalBody">
+                    <div class="follow-us-text">
+                        <p>Follow us on:</p>
+                    </div>
+                    <div class="social-link">
+                        <span class="social-icon">🐙</span>
+                        <a href="https://github.com/abhieshek11" target="_blank" id="githubLink">GitHub:
+                            @abhieshek11</a>
+                    </div>
+                    <div class="social-link">
+                        <span class="social-icon">💼</span>
+                        <a href="https://www.linkedin.com/in/abhieshek11/" target="_blank" id="linkedinLink">LinkedIn:
+                            @abhieshek11</a>
+                    </div>
+                    <div class="social-link">
+                        <span class="social-icon">📸</span>
+                        <a href="https://www.instagram.com/abhisk02/" target="_blank" id="instagramLink">Instagram:
+                            @abhisk02</a>
+                    </div>
+                    <div class="social-link">
+                        <span class="social-icon">📧</span>
+                        <a href="mailto:abhieshek11@gmail.com" id="emailLink">Email: abhieshek11@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="gameOver" class="hidden">
+            <h2>Game Over</h2>
+            <p>Final Score: <span id="finalScore">0</span></p>
+            <button id="restartBtn">Play Again</button>
+        </div>
+        <div id="pauseMenu" class="hidden">
+            <h2>Game Paused</h2>
+            <button id="resumeBtn">Resume</button>
+            <button id="restartFromPauseBtn">Restart</button>
+            <button id="mainMenuBtn">Main Menu</button>
+        </div>
+        <div id="startScreen">
+            <h1>Cosmic Defender</h1>
+            <div class="controls-info">
+                <p class="desktop-controls">Use WASD or Arrow Keys to move</p>
+                <p class="desktop-controls">Hold Space to shoot</p>
+                <p class="desktop-controls">ESC to pause</p>
+                <p class="mobile-controls">Touch and drag to move</p>
+                <p class="mobile-controls">Touch screen to shoot</p>
+                <p class="mobile-controls">ESC to pause</p>
+            </div>
+            <button id="startBtn">Start Game</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
